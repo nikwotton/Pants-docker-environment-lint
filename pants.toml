@@ -1,0 +1,14 @@
+[GLOBAL]
+pants_version = "2.15.1"
+backend_packages.add = [
+    "pants.backend.python", # Enables python development
+    "pants.backend.python.lint.black", # Enables black linting
+    "pants.backend.docker", # Allows pants to wrap docker containers
+]
+
+[anonymous-telemetry]
+enabled = true
+repo_id = "F3D0CA23-C4B4-4BA0-B45A-554AE2F51E77"
+
+[environments-preview.names]
+manylinux = ":manylinux"
